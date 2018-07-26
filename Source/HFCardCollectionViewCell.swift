@@ -22,16 +22,16 @@ open class HFCardCollectionViewCell: UICollectionViewCell {
     // MARK: Overrides
     
     /// Overwritten to setup the view
-    open override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        self.setupLayer(self)
-        
-        self.contentView.layer.masksToBounds = true
-        self.contentView.layer.cornerRadius = self.cornerRadius
-        self.contentView.clipsToBounds = true
-        self.contentView.backgroundColor = self.firstBackgroundColor
-    }
+//    open override func awakeFromNib() {
+//        super.awakeFromNib()
+//        
+//        self.setupLayer(self)
+//        
+//        self.contentView.layer.masksToBounds = true
+//        self.contentView.layer.cornerRadius = self.cornerRadius
+//        self.contentView.clipsToBounds = true
+//        self.contentView.backgroundColor = self.firstBackgroundColor
+//    }
     
     /// Important for updating the Z index and setting the flag 'isUserInteractionEnabled'
     ///

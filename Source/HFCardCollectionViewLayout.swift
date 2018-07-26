@@ -138,17 +138,17 @@ open class HFCardCollectionViewLayout: UICollectionViewLayout, UIGestureRecogniz
     
     /// Specifies the margin for the top margin of a bottom stacked card.
     ///
-    /// Value can be between 0 and 20
+    /// Value can be between 0 and 100
     ///
-    /// Default: 10
-    @IBInspectable open var bottomCardLookoutMargin: CGFloat = 10 {
+    /// Default: 70
+    @IBInspectable open var bottomCardLookoutMargin: CGFloat = 70 {
         didSet {
             if(bottomCardLookoutMargin < 0) {
                 bottomCardLookoutMargin = 0
                 return
             }
-            if(bottomCardLookoutMargin > 20) {
-                bottomCardLookoutMargin = 20
+            if(bottomCardLookoutMargin > 100) {
+                bottomCardLookoutMargin = 100
                 return
             }
             self.collectionView?.performBatchUpdates({ self.invalidateLayout() }, completion: nil)
